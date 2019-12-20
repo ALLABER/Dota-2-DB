@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#13181C</color>
+    <color name="colorPrimaryDark">#13181C</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#DDE1E4</color>
+    <color name="colorBlack">#131415</color>
+    <color name="colorTransparentBlack">#99000000</color>
+    <color name="colorLine">#29353B</color>
+    <color name="colorTextViewAbilityType">#566B85</color>
+    <color name="colorTextViewAbilityLoreTop">#9AB0CD</color>
+    <color name="colorTextViewAbilityRange">#536781</color>
+    <color name="colorTextViewCooldownAndMana">#E1E1E1</color>
+    <color name="colorTextViewAbilityLoreBottom">#3D4E5B</color>
+
+
+
+    <color name="colorTextViewAbilityLoreBottom1">#cdcdcd</color>
+    <color name="colorTextViewAbilityLoreBottom2">#444444</color>
+    <color name="colorTextViewAbilityLoreBottom3">#eeeeee</color>
+    <color name="colorTextViewAbilityLoreBottom4">#3D4E5B</color>
+
+
+
+
+
+</resources>

@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/system_image_gradient_main_body"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintRoles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewRoles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha=".9"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:shadowColor="@color/colorBlack"
+                    android:shadowDx="7"
+                    android:shadowDy="7"
+                    android:shadowRadius="7"
+                    android:text="РОЛИ"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutRoles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewRoles">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutRolesFarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="40dp">
+
+                        <TextView
+                            android:id="@+id/textViewRolesFarm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:alpha=".9"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:shadowColor="@color/colorBlack"
+                            android:shadowDx="7"
+                            android:shadowDy="7"
+                            android:shadowRadius="7"
+                            android:text="Фарм"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:typeface="normal"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewRoles" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesFarm1"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesFarm2"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesFarm3"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutRolesSupport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="40dp">
+
+                        <TextView
+                            android:id="@+id/textViewRolesSupport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:alpha=".9"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:shadowColor="@color/colorBlack"
+                            android:shadowDx="7"
+                            android:shadowDy="7"
+                            android:shadowRadius="7"
+                            android:text="Поддержка"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:typeface="normal"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewRoles" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesSupport1"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesSupport2"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesSupport3"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutRolesQuickDamage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="40dp">
+
+                        <TextView
+                            android:id="@+id/textViewQuickDamage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:alpha=".9"
+                            android:paddingRight="8dp"
+                            android:shadowColor="@color/colorBlack"
+                            android:shadowDx="7"
+                            android:shadowDy="7"
+                            android:shadowRadius="7"
+                            android:text="Быстр. урон"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:typeface="normal"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewRoles" />
+
+                        <ImageView
+                            android:id="@+id/imageViewQuickDamage1"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewQuickDamage2"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewQuickDamage3"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutRolesControl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="40dp">
+
+                        <TextView
+                            android:id="@+id/textViewRolesControl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:alpha=".9"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:shadowColor="@color/colorBlack"
+                            android:shadowDx="7"
+                            android:shadowDy="7"
+                            android:shadowRadius="7"
+                            android:text="Контроль"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:typeface="normal"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewRoles" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesControl1"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesControl2"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesControl3"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutRolesForest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="40dp">
+
+                        <TextView
+                            android:id="@+id/textViewRolesForest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:alpha=".9"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:shadowColor="@color/colorBlack"
+                            android:shadowDx="7"
+                            android:shadowDy="7"
+                            android:shadowRadius="7"
+                            android:text="Лес"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:typeface="normal"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewRoles" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesForest1"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesForest2"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesForest3"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutRolesPersistence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="40dp">
+
+                        <TextView
+                            android:id="@+id/textViewRolesPersistence"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:alpha=".9"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:shadowColor="@color/colorBlack"
+                            android:shadowDx="7"
+                            android:shadowDy="7"
+                            android:shadowRadius="7"
+                            android:text="Стойкость"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:typeface="normal"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewRoles" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesPersistence1"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesPersistence2"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesPersistence3"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutRolesEscape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="40dp">
+
+                        <TextView
+                            android:id="@+id/textViewRolesEscape"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:alpha=".9"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:shadowColor="@color/colorBlack"
+                            android:shadowDx="7"
+                            android:shadowDy="7"
+                            android:shadowRadius="7"
+                            android:text="Побег"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:typeface="normal"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewRoles" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesEscape1"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesEscape2"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesEscape3"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutRolesSiege"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="40dp">
+
+                        <TextView
+                            android:id="@+id/textViewRolesSiege"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:alpha=".9"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:shadowColor="@color/colorBlack"
+                            android:shadowDx="7"
+                            android:shadowDy="7"
+                            android:shadowRadius="7"
+                            android:text="Осада"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:typeface="normal"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewRoles" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesSiege1"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesSiege2"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesSiege3"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutRolesInitiation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="40dp">
+
+                        <TextView
+                            android:id="@+id/textViewRolesInitiation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:alpha=".9"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:shadowColor="@color/colorBlack"
+                            android:shadowDx="7"
+                            android:shadowDy="7"
+                            android:shadowRadius="7"
+                            android:text="Инициация"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:typeface="normal"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewRoles" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesInitiation1"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesInitiation2"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                        <ImageView
+                            android:id="@+id/imageViewRolesInitiation3"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/textCommon"
+                            app:srcCompat="@drawable/system_image_fragment_hero_role_stats_false" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintBiography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewBiography"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha=".9"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="0dp"
+                    android:shadowColor="@color/colorBlack"
+                    android:shadowDx="7"
+                    android:shadowDy="7"
+                    android:shadowRadius="7"
+                    android:text="БИОГРАФИЯ"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewBiographyText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewBiography" />
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

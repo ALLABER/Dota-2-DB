@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Dota 2 DB</string>
+    <string name="tab_text_1">Сила</string>
+    <string name="tab_text_2">Ловкость</string>
+    <string name="tab_text_3">Интеллект</string>
+    <string name="textCommon">Text</string>
+    <string name="numberCommon">0</string>
+    <string-array name="items_directory">
+        <item>Обновление</item>
+        <item>Режим игры</item>
+        <item>Роли героев</item>
+        <item>Словарь</item>
+        <item>Вардинг</item>
+        <item>Консольные команды</item>
+        <item>Советы</item>
+        <item>Крипы</item>
+        <item>Нейтральные крипы</item>
+        <item>Рошан</item>
+        <item>Руны</item>
+        <item>Механика</item>
+    </string-array>
+</resources>

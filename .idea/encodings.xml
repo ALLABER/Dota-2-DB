@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/html/console_commands/index.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/html/dictionary/index.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/html/game_mode/index.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/html/hero_roles/index.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/html/neutral_creeps/index.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/html/roshan/index.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/html/runes/index.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/html/tips/index.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/html/update/index.html" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/html/warding/index.html" charset="windows-1251" />
+  </component>
+</project>

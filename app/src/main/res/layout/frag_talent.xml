@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/system_image_gradient_main_body"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ConstraintTalentTree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewTalentTree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha=".9"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:shadowColor="@color/colorBlack"
+                    android:shadowDx="7"
+                    android:shadowDy="7"
+                    android:shadowRadius="7"
+                    android:text="ДРЕВО ТАЛАНТОВ"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTalentTree">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/TalentTreeLvl25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutTalentTree25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:id="@+id/LeftLvl25"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageViewLeftLvl25"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:contentDescription="@string/textCommon"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/system_image_talent_tree_left" />
+
+                                <TextView
+                                    android:id="@+id/textViewLeftLvl25"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="32dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorWhite"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="@+id/imageViewLeftLvl25"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/imageViewLeftLvl25" />
+
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:id="@+id/RightLvl25"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageViewRightLvl25"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:contentDescription="@string/textCommon"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/system_image_talent_tree_right" />
+
+                                <TextView
+                                    android:id="@+id/textViewRightLvl25"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorWhite"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="@+id/imageViewRightLvl25"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/imageViewRightLvl25" />
+
+                            </android.support.constraint.ConstraintLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textViewTalentTree25"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+
+
+                            android:layout_weight="1"
+                            android:background="@drawable/system_image_talent_tree_center"
+
+
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:shadowColor="#FA3504"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="25"
+                            android:text="25"
+                            android:textAlignment="center"
+                            android:textColor="#e1c889"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutTalentTree25"
+                            app:layout_constraintEnd_toEndOf="@+id/linearLayoutTalentTree25"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/linearLayoutTalentTree25" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/TalentTreeLvl20"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutTalentTree20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:id="@+id/LeftLvl20"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageViewLeftLvl20"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:contentDescription="@string/textCommon"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/system_image_talent_tree_left" />
+
+                                <TextView
+                                    android:id="@+id/textViewLeftLvl20"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="32dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorWhite"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="@+id/imageViewLeftLvl20"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/imageViewLeftLvl20" />
+
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:id="@+id/RightLvl20"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageViewRightLvl20"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:contentDescription="@string/textCommon"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/system_image_talent_tree_right" />
+
+                                <TextView
+                                    android:id="@+id/textViewRightLvl20"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorWhite"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="@+id/imageViewRightLvl20"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/imageViewRightLvl20" />
+
+                            </android.support.constraint.ConstraintLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textViewTalentTree20"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+
+
+                            android:layout_weight="1"
+                            android:background="@drawable/system_image_talent_tree_center"
+
+
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:shadowColor="#FA3504"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="25"
+                            android:text="20"
+                            android:textAlignment="center"
+                            android:textColor="#e1c889"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutTalentTree20"
+                            app:layout_constraintEnd_toEndOf="@+id/linearLayoutTalentTree20"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/linearLayoutTalentTree20" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/TalentTreeLvl15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutTalentTree15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:id="@+id/LeftLvl15"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageViewLeftLvl15"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:contentDescription="@string/textCommon"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/system_image_talent_tree_left" />
+
+                                <TextView
+                                    android:id="@+id/textViewLeftLvl15"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="32dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorWhite"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="@+id/imageViewLeftLvl15"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/imageViewLeftLvl15" />
+
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:id="@+id/RightLvl15"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageViewRightLvl15"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:contentDescription="@string/textCommon"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/system_image_talent_tree_right" />
+
+                                <TextView
+                                    android:id="@+id/textViewRightLvl15"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorWhite"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="@+id/imageViewRightLvl15"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/imageViewRightLvl15" />
+
+                            </android.support.constraint.ConstraintLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textViewTalentTree15"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+
+
+                            android:layout_weight="1"
+                            android:background="@drawable/system_image_talent_tree_center"
+
+
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:shadowColor="#FA3504"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="25"
+                            android:text="15"
+                            android:textAlignment="center"
+                            android:textColor="#e1c889"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutTalentTree15"
+                            app:layout_constraintEnd_toEndOf="@+id/linearLayoutTalentTree15"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/linearLayoutTalentTree15" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/TalentTreeLvl10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutTalentTree10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:id="@+id/LeftLvl10"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageViewLeftLvl10"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:contentDescription="@string/textCommon"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/system_image_talent_tree_left" />
+
+                                <TextView
+                                    android:id="@+id/textViewLeftLvl10"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="32dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorWhite"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="@+id/imageViewLeftLvl10"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/imageViewLeftLvl10" />
+
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:id="@+id/RightLvl10"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/imageViewRightLvl10"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:contentDescription="@string/textCommon"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/system_image_talent_tree_right" />
+
+                                <TextView
+                                    android:id="@+id/textViewRightLvl10"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorWhite"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="@+id/imageViewRightLvl10"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/imageViewRightLvl10" />
+
+                            </android.support.constraint.ConstraintLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textViewTalentTree10"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+
+
+                            android:layout_weight="1"
+                            android:background="@drawable/system_image_talent_tree_center"
+
+
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:shadowColor="#FA3504"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="25"
+                            android:text="10"
+                            android:textAlignment="center"
+                            android:textColor="#e1c889"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/linearLayoutTalentTree10"
+                            app:layout_constraintEnd_toEndOf="@+id/linearLayoutTalentTree10"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/linearLayoutTalentTree10" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
